@@ -2,6 +2,8 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {}
 
+// see generator code!
+
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {}
@@ -13,7 +15,7 @@ function renderLicenseSection(license) {}
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-  https://github.com/${data.username}/${data.title}
+  https://github.com/${data.github}/${data.title}
   # Description
   ${data.description}
   # Table of Content
@@ -29,13 +31,13 @@ function generateMarkdown(data) {
   In order to use this app, ${data.usage}
   # License
   This project is licensed under the ${data.license} license. 
-  ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+  ![license](https://img.shields.io/badge/license-${data.license}-blue.svg)
   # Contributors
   ​Contributors: ${data.contributors}
   # Tests
   The following is needed to run the test: ${data.tests}
   # Questions
-  If you have any questions about the repo, open an issue or contact ${data.username} directly at : ${data.email}.
+  If you have any questions about the repo, open an issue or contact ${data.github} directly at : ${data.email}.
   `
   }
   

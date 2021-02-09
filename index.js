@@ -13,8 +13,8 @@ const questions = [{
     message: "Enter the title of your project.",
 }, {
     type: "input",
-    name: "Enter a description of your project.",
-    title: "description",
+    name: "description",
+    message: "Enter a description of your project.",
 }, {
     type: "input",
     name: "toc",
@@ -46,15 +46,15 @@ const questions = [{
     message: "List all contributors in this project."
 }, {
     type: "input",
-    name: "Tests",
+    name: "tests",
     message: "What tests were run to ensure functionality of project?",
 }, {
     type: "input",
-    name: "GitHub",
+    name: "github",
     message: "Please enter your GitHub username."
 }, {
     type: "input",
-    name: "Email",
+    name: "email",
     message: "Please enter the email associated with your GitHub account."
 }];
 

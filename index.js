@@ -18,7 +18,7 @@ const questions = [{
 }, {
     type: "input",
     name: "toc",
-    message: "Table of Content",
+    message: "Table of Content, hit ENTER to generate",
 }, {
     type: "input",
     name: "installation",
@@ -28,7 +28,7 @@ const questions = [{
     name: "usage",
     message: "What is your project used for?",
 }, {
-    type: "checkbox",
+    type: "list",
     name: "license",
     choices: [
         "GNU_AGPLv3",
@@ -66,7 +66,7 @@ function writeToFile(fileName, data) {
         if (err) {
             return console.log(err)
         } else {
-            console.log("success")
+            console.log("SUCCESS")
         }
     })
 };
